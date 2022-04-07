@@ -1,4 +1,4 @@
-# proj-html-vuejs
+# consultant-midterm
 
 ## Project setup
 ```
