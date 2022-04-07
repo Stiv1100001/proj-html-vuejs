@@ -1,7 +1,7 @@
 <template>
   <main>
     <nav
-      class="container d-flex justify-content-between align-items-center py-2 w-75 mx-auto"
+      class="container d-flex justify-content-between align-items-center pt-2 w-75 mx-auto"
     >
       <img :src="imgs.logo" alt="Logo" />
       <div class="d-flex">
@@ -76,7 +76,7 @@ nav {
   background-image: url("@/assets/img/bg-parallax.png");
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
+  background-position: center -3rem;
 
   .jumbo-card {
     width: 31%;
