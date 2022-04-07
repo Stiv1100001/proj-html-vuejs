@@ -1,12 +1,17 @@
 <template>
-  <div id="app"></div>
+  <div id="app">
+    <MainHeader />
+  </div>
 </template>
 
 <script>
+import MainHeader from "./components/MainHeader.vue";
 export default {
   name: "App",
-  components: {},
+  components: { MainHeader },
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+@import "@/assets/style/main.scss";
+</style>
