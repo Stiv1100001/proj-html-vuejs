@@ -2,3 +2,18 @@
 @import "./partials/variables";
 @import "./partials/mixin";
 @import "./partials/fonts";
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.btn-blue {
+    background-color: $blue-lagoon;
+    color: $white;
+    padding: .5rem 1.5rem;
+}

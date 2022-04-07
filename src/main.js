@@ -12,13 +12,22 @@ import {
   faClock,
   faPhone,
   faEnvelope,
+  faArrowRight,
 } from "@fortawesome/free-solid-svg-icons";
 
 Vue.config.productionTip = false;
 
 import "bootstrap";
 
-library.add(faClock, faPhone, faEnvelope, faFacebookF, faLinkedinIn, faTwitter);
+library.add(
+  faClock,
+  faPhone,
+  faEnvelope,
+  faFacebookF,
+  faLinkedinIn,
+  faTwitter,
+  faArrowRight
+);
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 new Vue({
