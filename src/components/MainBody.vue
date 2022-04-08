@@ -381,11 +381,7 @@ nav {
   padding: 7rem 0;
   background-color: rgb(238, 244, 237);
 
-  h6 {
-    color: $fountain-blue;
-  }
-
-  p.services-text {
+  .services-text {
     color: $text-gray;
     font-size: 1.1rem;
   }
@@ -450,10 +446,6 @@ nav {
 
     h6 {
       color: $blue-lagoon;
-    }
-
-    h1 {
-      font-weight: bold;
     }
 
     p {
