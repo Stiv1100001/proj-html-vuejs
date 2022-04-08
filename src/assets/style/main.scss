@@ -18,6 +18,11 @@ html {
     padding: .5rem 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
+
+    &:hover {
+      background-color: $fountain-blue;
+      color: $white;
+    }
 }
 
 .btn-outlined-blue {
@@ -26,6 +31,10 @@ html {
     padding: .5rem 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
+
+    &:hover {
+        color: $fountain-blue;
+    }
 }
 
 h6.subtitle {

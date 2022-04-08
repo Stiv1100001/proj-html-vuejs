@@ -38,13 +38,13 @@ nav {
     height: 5vh;
   }
 
-  a.btn {
-    background-color: $blue-lagoon;
-    color: $white;
-    &:hover {
-      background-color: $fountain-blue;
-    }
-  }
+  // a.btn {
+  //   background-color: $blue-lagoon;
+  //   color: $white;
+  //   &:hover {
+  //     background-color: $fountain-blue;
+  //   }
+  // }
 
   ul {
     li {

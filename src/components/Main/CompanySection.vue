@@ -67,7 +67,7 @@ export default {
 .company {
   height: 80vh;
   background-color: $woodsmoke;
-  z-index: -1;
+  z-index: 0;
 
   .points {
     left: 50%;
