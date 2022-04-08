@@ -48,7 +48,7 @@
         </div>
         <div class="row row-cols-3 g-5">
           <div v-for="card in servicesCard" :key="card.title" class="col">
-            <div class="card bg-white p-5 rounded-3 border-0">
+            <div class="card bg-white rounded-3 border-0 position-relative">
               <div
                 class="d-flex justify-content-between align-items-start mb-3"
               >
@@ -57,6 +57,7 @@
                   icon="fa-solid fa-arrow-right icon-lg"
                   size="lg"
                   color="#038484"
+                  class="arrow-icon position-static"
                 />
               </div>
               <div class="text">
@@ -135,6 +136,12 @@
         <div class="row row-cols-3 g-1">
           <div v-for="project in projects" :key="project.text" class="col">
             <div class="card-image position-relative p-4">
+              <font-awesome-icon
+                icon="fa-solid fa-arrow-right"
+                size="lg"
+                color="#ffffff"
+                class="arrow-icon position-absolute"
+              />
               <img
                 :src="project.img"
                 :alt="project.text"
@@ -142,6 +149,9 @@
               />
               <p class="text-white position-absolute">
                 {{ project.text }}
+                <span class="hidden">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </span>
               </p>
             </div>
           </div>
@@ -408,6 +418,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "../assets/style/partials/variables";
+
 nav {
   height: 8vh;
 
@@ -466,6 +477,9 @@ nav {
   }
 
   .card {
+    padding: 3rem 0.8rem 3rem 2rem;
+    transition: transform 0.3s;
+
     img {
       height: 3rem;
       fill: $fountain-blue;
@@ -486,6 +500,21 @@ nav {
     .icon-lg {
       fill: $fountain-blue;
       font-size: 2rem;
+    }
+
+    .arrow-icon {
+      right: 10px;
+      top: 0;
+      padding: 1rem;
+    }
+
+    &:hover {
+      transform: translateY(-10%);
+
+      .arrow-icon {
+        background-color: #52bbb986;
+        border-radius: 50%;
+      }
     }
   }
 }
@@ -568,7 +597,17 @@ nav {
   }
 
   .card-image {
+    .arrow-icon {
+      right: 3rem;
+      top: 40px;
+      z-index: 3;
+      display: none;
+      visibility: hidden;
+      transition: all 0.4s;
+    }
+
     img {
+      transition: all 0.5s;
       filter: brightness(50%);
     }
     p {
@@ -577,6 +616,31 @@ nav {
       left: 0%;
       bottom: 10%;
       font-weight: bold;
+
+      span.hidden {
+        transition: all 0.3s;
+        margin-top: 1rem;
+        display: none;
+        font-size: 1rem;
+        font-weight: 500;
+      }
+    }
+
+    &:hover {
+      img {
+        filter: brightness(30%);
+      }
+
+      .arrow-icon {
+        display: inline;
+        visibility: visible;
+      }
+
+      p {
+        span.hidden {
+          display: block;
+        }
+      }
     }
   }
 }
