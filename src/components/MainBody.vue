@@ -352,7 +352,7 @@ span.highligth {
 
   .card {
     img {
-      height: 2rem;
+      height: 3rem;
       fill: $fountain-blue;
     }
 
@@ -382,9 +382,7 @@ span.highligth {
 
   .points {
     left: 50%;
-
-    filter: invert(100%);
-    z-index: 1;
+    z-index: 2;
 
     &.upper {
       top: 0;
