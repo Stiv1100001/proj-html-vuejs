@@ -39,7 +39,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/style/partials/variables";
+@import "../assets/style/partials/variables";
 header {
   background-color: $big-stone;
   color: $white;

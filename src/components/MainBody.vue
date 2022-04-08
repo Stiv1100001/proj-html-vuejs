@@ -201,7 +201,19 @@
     </section>
 
     <section class="touch">
-      <div class="container"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-8">
+            <h6 class="subtitle mb-4">Send a message</h6>
+            <h1 class="title">Get in <span class="highligth">Touch</span></h1>
+            <p class="mb-5">
+              We will respond to your message as soon as possible
+            </p>
+            <form></form>
+          </div>
+          <div class="col-4"></div>
+        </div>
+      </div>
     </section>
   </main>
 </template>
@@ -328,7 +340,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/style/partials/variables";
+@import "../assets/style/partials/variables";
 nav {
   height: 8vh;
 
@@ -357,7 +369,7 @@ nav {
 
 .jumbotron {
   height: 80vh;
-  background-image: url("@/assets/img/bg-parallax.png");
+  background-image: url("../assets/img/bg-parallax.png");
   background-size: cover;
   background-attachment: fixed;
   background-position: center -3rem;
@@ -540,6 +552,12 @@ nav {
       filter: invert(1) brightness(90%);
       height: 1.7rem;
     }
+  }
+}
+
+.touch {
+  .container {
+    padding: 7rem 0;
   }
 }
 </style>
