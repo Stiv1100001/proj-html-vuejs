@@ -68,6 +68,53 @@
         </div>
       </div>
     </section>
+
+    <section class="company position-relative">
+      <img
+        :src="imgs.points"
+        alt="points"
+        class="points upper position-absolute"
+      />
+      <img
+        :src="imgs.points"
+        alt="points"
+        class="points lower position-absolute"
+      />
+      <img :src="imgs.company" alt="company" class="rigth position-absolute" />
+      <div class="container">
+        <div class="text-place w-50">
+          <h6 class="text-uppercase mb-4">ABout the network</h6>
+          <h1 class="mb-4"><span class="highligth">The</span> Company</h1>
+          <p class="mb-5">
+            For 12 years we have been providing auddit and warranty, financial
+            advice, risk advice, taxes and related services tto select clients.
+          </p>
+
+          <div class="row g-2 mb-5">
+            <div class="col-6" v-for="spec in companySpec" :key="spec.title">
+              <div class="company-spec">
+                <h4 class="mb-3">
+                  <font-awesome-icon color="#038484" :icon="spec.icon" />
+                  {{ spec.title }}
+                </h4>
+                <p>Lorem ipsum ddolor sit amet consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-start">
+            <a href="#" class="btn btn-blue text-uppercase fw-bold"
+              >get in touch</a
+            >
+            <a
+              href="#"
+              class="btn btn-outlined-blue text-uppercase fw-bold ms-3"
+              >read more</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 </template>
 
@@ -77,6 +124,8 @@ export default {
   data: () => ({
     imgs: {
       logo: require("../assets/img/svg-7.svg"),
+      points: require("../assets/img/svg-0.svg"),
+      company: require("../assets/img/about-4.jpg"),
     },
     menuItems: ["Home", "Services", "about", "projects", "results"],
     servicesCard: [
@@ -103,6 +152,24 @@ export default {
       {
         icon: require("../assets/img/svg-6.svg"),
         title: "Regulatory Rick",
+      },
+    ],
+    companySpec: [
+      {
+        icon: "fa-solid fa-award",
+        title: "Tradition",
+      },
+      {
+        icon: "fa-solid fa-lock",
+        title: "Security",
+      },
+      {
+        icon: "fa-solid fa-pen-to-square",
+        title: "Certificate",
+      },
+      {
+        icon: "fa-solid fa-graduation-cap",
+        title: "Expertise",
       },
     ],
   }),
@@ -209,6 +276,61 @@ span.highligth {
     .icon-lg {
       fill: $fountain-blue;
       font-size: 2rem;
+    }
+  }
+}
+
+.company {
+  height: 80vh;
+  background-color: black;
+  z-index: -1;
+
+  .points {
+    left: 50%;
+
+    filter: invert(100%);
+    z-index: 1;
+
+    &.upper {
+      top: 0;
+      transform: translate(-55%, -25%);
+    }
+
+    &.lower {
+      bottom: 0;
+      transform: translate(-55%, 75%);
+    }
+  }
+
+  img.rigth {
+    right: 0;
+    height: 80vh;
+    width: 50vw;
+    z-index: 0;
+    object-fit: cover;
+  }
+
+  .text-place {
+    padding: 7rem 0 7rem 10%;
+
+    color: $white;
+
+    h6 {
+      color: $blue-lagoon;
+    }
+
+    h1 {
+      font-weight: bold;
+    }
+
+    p {
+      color: $text-gray;
+    }
+
+    .company-spec {
+      h4 {
+        font-weight: bold;
+      }
     }
   }
 }

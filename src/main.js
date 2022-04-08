@@ -13,6 +13,10 @@ import {
   faPhone,
   faEnvelope,
   faArrowRight,
+  faAward,
+  faLock,
+  faPenToSquare,
+  faGraduationCap,
 } from "@fortawesome/free-solid-svg-icons";
 
 Vue.config.productionTip = false;
@@ -26,7 +30,11 @@ library.add(
   faFacebookF,
   faLinkedinIn,
   faTwitter,
-  faArrowRight
+  faArrowRight,
+  faAward,
+  faLock,
+  faPenToSquare,
+  faGraduationCap
 );
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
