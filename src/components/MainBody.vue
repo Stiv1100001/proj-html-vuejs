@@ -34,8 +34,8 @@
 
     <section class="services">
       <div class="container">
-        <h6 class="text-uppercase">Our business areas</h6>
-        <h1 class="mb-4">
+        <h6 class="text-uppercase fw-bold">Our business areas</h6>
+        <h1 class="mb-4 fw-bold">
           Excellence in <span class="highligth">Services</span>
         </h1>
         <div class="d-flex justify-content-between align-items-center mb-4">
@@ -44,7 +44,7 @@
             cutting-edge techhnologies and a team of experienced and renowed
             professionals. These are some options that you chan hire
           </p>
-          <a href="#" class="btn btn-blue">SEE ALL</a>
+          <a href="#" class="btn btn-blue fw-bold">SEE ALL</a>
         </div>
         <div class="row row-cols-3 g-5">
           <div v-for="card in servicesCard" :key="card.title" class="col">
