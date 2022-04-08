@@ -14,7 +14,7 @@
             <a href="#">{{ item }}</a>
           </li>
         </ul>
-        <a href="#" class="btn text-uppercase">get in touch</a>
+        <a href="#" class="btn btn-blue">get in touch</a>
       </div>
     </nav>
 
@@ -27,15 +27,15 @@
           No matter what your company needs, we will be ready to assist you in
           the best possible way.
         </p>
-        <a href="#" class="btn text-uppercase get">get in touch</a>
-        <a href="#" class="btn text-uppercase read ms-4">read more</a>
+        <a href="#" class="btn btn-blue">get in touch</a>
+        <a href="#" class="btn btn-outlined-blue ms-4">read more</a>
       </div>
     </section>
 
     <section class="services">
       <div class="container">
-        <h6 class="text-uppercase fw-bold">Our business areas</h6>
-        <h1 class="mb-4 fw-bold">
+        <h6 class="subtitle">Our business areas</h6>
+        <h1 class="mb-4 title">
           Excellence in <span class="highligth">Services</span>
         </h1>
         <div class="d-flex justify-content-between align-items-center mb-4">
@@ -44,7 +44,7 @@
             cutting-edge techhnologies and a team of experienced and renowed
             professionals. These are some options that you chan hire
           </p>
-          <a href="#" class="btn btn-blue fw-bold">SEE ALL</a>
+          <a href="#" class="btn btn-blue">SEE ALL</a>
         </div>
         <div class="row row-cols-3 g-5">
           <div v-for="card in servicesCard" :key="card.title" class="col">
@@ -83,8 +83,8 @@
       <img :src="imgs.company" alt="company" class="rigth position-absolute" />
       <div class="container">
         <div class="text-place w-50">
-          <h6 class="text-uppercase mb-4">ABout the network</h6>
-          <h1 class="mb-4"><span class="highligth">The</span> Company</h1>
+          <h6 class="subtitle mb-4">ABout the network</h6>
+          <h1 class="title mb-4"><span class="highligth">The</span> Company</h1>
           <p class="mb-5">
             For 12 years we have been providing auddit and warranty, financial
             advice, risk advice, taxes and related services tto select clients.
@@ -103,14 +103,8 @@
           </div>
 
           <div class="d-flex justify-content-start">
-            <a href="#" class="btn btn-blue text-uppercase fw-bold"
-              >get in touch</a
-            >
-            <a
-              href="#"
-              class="btn btn-outlined-blue text-uppercase fw-bold ms-3"
-              >read more</a
-            >
+            <a href="#" class="btn btn-blue">get in touch</a>
+            <a href="#" class="btn btn-outlined-blue ms-3">read more</a>
           </div>
         </div>
       </div>
@@ -119,8 +113,8 @@
     <section class="actions">
       <div class="container text-center">
         <div class="mb-5">
-          <h6 class="text-uppercase fw-bold mb-4">We do more for everyone</h6>
-          <h1 class="mb-4 fw-bold">
+          <h6 class="subtitle mb-4">We do more for everyone</h6>
+          <h1 class="title mb-4">
             Actions & <span class="highligth">Projects</span>
           </h1>
         </div>
@@ -159,9 +153,9 @@
       <div class="upper">
         <div class="container py-5">
           <div class="text-center mb-5">
-            <h6 class="text-uppercase fw-bold mb-4">We do more for everyone</h6>
-            <h1 class="mb-4 fw-bold text-white">
-              <span class="highligth text-white proj">Results</span> in Numbers
+            <h6 class="subtitle mb-4">We do more for everyone</h6>
+            <h1 class="title alternate mb-4">
+              <span class="highligth">Results</span> in Numbers
             </h1>
           </div>
           <div class="row row-cols-4 numbers">
@@ -361,16 +355,6 @@ nav {
   }
 }
 
-span.highligth {
-  color: $blue-lagoon;
-  background-color: $blue-bg;
-  padding: 0rem 1rem;
-
-  &.proj {
-    background-color: #0b2b2d;
-  }
-}
-
 .jumbotron {
   height: 80vh;
   background-image: url("@/assets/img/bg-parallax.png");
@@ -389,16 +373,6 @@ span.highligth {
     p {
       color: $pumice;
       font-size: 1.18rem;
-    }
-
-    a.get {
-      background-color: $blue-lagoon;
-      color: $white;
-    }
-
-    a.read {
-      border: 1px solid $blue-lagoon;
-      color: $blue-lagoon;
     }
   }
 }

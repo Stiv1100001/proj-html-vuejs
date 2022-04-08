@@ -16,10 +16,38 @@ html {
     background-color: $blue-lagoon;
     color: $white;
     padding: .5rem 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .btn-outlined-blue {
     border: 1px solid $blue-lagoon;
     color: $blue-lagoon;
     padding: .5rem 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h6.subtitle {
+    color: $fountain-blue;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h1.title {
+    font-weight: bold;
+
+    .highligth {
+        color: $blue-lagoon;
+        background-color: $blue-bg;
+        padding: 0rem 1rem;
+    }
+
+    &.alternate {
+        color: $white;
+        .highligth {
+            color: $white;
+            background-color: #0b2b2d;
+        }
+    }
 }
