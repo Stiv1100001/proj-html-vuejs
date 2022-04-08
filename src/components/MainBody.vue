@@ -115,6 +115,45 @@
         </div>
       </div>
     </section>
+
+    <section class="actions">
+      <div class="container text-center">
+        <div class="mb-5">
+          <h6 class="text-uppercase fw-bold mb-4">We do more for everyone</h6>
+          <h1 class="mb-4 fw-bold">
+            Actions & <span class="highligth">Projects</span>
+          </h1>
+        </div>
+
+        <div class="navbar d-flex justify-content-center w-100 mb-4">
+          <ul class="d-flex justify-content-around m-0 p-0">
+            <li
+              v-for="action in actions"
+              :key="action.text"
+              class="list-unstyled text-uppercase"
+              :class="{ active: action.active }"
+            >
+              <a href="#">{{ action.text }}</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="row row-cols-3 g-1">
+          <div v-for="project in projects" :key="project.text" class="col">
+            <div class="card-image position-relative p-4">
+              <img
+                :src="project.img"
+                :alt="project.text"
+                class="img-fluid rounded-3"
+              />
+              <p class="text-white position-absolute">
+                {{ project.text }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 </template>
 
@@ -170,6 +209,62 @@ export default {
       {
         icon: "fa-solid fa-graduation-cap",
         title: "Expertise",
+      },
+    ],
+    actions: [
+      {
+        text: "all",
+        active: true,
+      },
+      {
+        text: "institutional",
+        active: false,
+      },
+      {
+        text: "social",
+        active: false,
+      },
+      {
+        text: "events",
+        active: false,
+      },
+      {
+        text: "innovation",
+        active: false,
+      },
+      {
+        text: "environment",
+        active: false,
+      },
+      {
+        text: "technology",
+        active: false,
+      },
+    ],
+    projects: [
+      {
+        img: require("../assets/img/project-1.jpg"),
+        text: "Academic professional program in social media",
+      },
+      {
+        img: require("../assets/img/project-2.jpg"),
+        text: "President's speech at the annual meeting",
+      },
+      {
+        img: require("../assets/img/project-3.jpg"),
+        text: "International business trip in Shangai",
+      },
+      {
+        img: require("../assets/img/project-4.jpg"),
+        text: "Technology workshop with education theme",
+      },
+      {
+        img: require("../assets/img/project-5.jpg"),
+        text: "Donation of clothes and food to the partner NGO",
+      },
+      {
+        img: require("../assets/img/project-6.jpg"),
+        text: "Confraternization of the procurrent team",
       },
     ],
   }),
@@ -331,6 +426,42 @@ span.highligth {
       h4 {
         font-weight: bold;
       }
+    }
+  }
+}
+
+.actions {
+  padding: 7rem 0;
+
+  .navbar {
+    li {
+      padding: 0.3rem 1.3rem;
+
+      a {
+        color: $text-gray;
+        text-decoration: none;
+      }
+
+      &.active {
+        background-color: $blue-bg;
+
+        a {
+          color: $blue-lagoon;
+        }
+      }
+    }
+  }
+
+  .card-image {
+    img {
+      filter: brightness(50%);
+    }
+    p {
+      padding: 0 30px;
+      font-size: 1.6rem;
+      left: 0%;
+      bottom: 10%;
+      font-weight: bold;
     }
   }
 }
