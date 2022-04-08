@@ -18,6 +18,7 @@ import {
   faPenToSquare,
   faGraduationCap,
   faLocationDot,
+  faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 
 Vue.config.productionTip = false;
@@ -36,7 +37,8 @@ library.add(
   faLock,
   faPenToSquare,
   faGraduationCap,
-  faLocationDot
+  faLocationDot,
+  faChevronRight
 );
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 

@@ -427,7 +427,7 @@ nav {
     li {
       font-weight: 500;
       a {
-        color: black;
+        color: $woodsmoke;
         text-decoration: none;
       }
     }
@@ -492,7 +492,7 @@ nav {
 
 .company {
   height: 80vh;
-  background-color: black;
+  background-color: $woodsmoke;
   z-index: -1;
 
   .points {
