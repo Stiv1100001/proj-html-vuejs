@@ -1,7 +1,7 @@
 <template>
   <section class="result">
     <div class="upper">
-      <div class="container py-5">
+      <div class="container-md py-5">
         <div class="text-center mb-5">
           <h6 class="subtitle mb-4">We do more for everyone</h6>
           <h1 class="title alternate mb-4">
@@ -17,20 +17,20 @@
           </div>
           <div class="col">
             <div class="text-center">
-              <h1>128</h1>
-              <h4>Certifications</h4>
+              <h1>230</h1>
+              <h4>Employees</h4>
             </div>
           </div>
           <div class="col">
             <div class="text-center">
-              <h1>128</h1>
-              <h4>Certifications</h4>
+              <h1>517</h1>
+              <h4>Customers</h4>
             </div>
           </div>
           <div class="col">
             <div class="text-center">
-              <h1>128</h1>
-              <h4>Certifications</h4>
+              <h1>94</h1>
+              <h4>Countries Served</h4>
             </div>
           </div>
         </div>

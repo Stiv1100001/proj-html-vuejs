@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="container">
+    <div class="container-md">
       <div class="row row-cols-4 g-4">
         <div class="col">
           <div>
@@ -26,7 +26,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="card rounded rounded-3">
+          <div class="card rounded rounded-3 px-4 py-5">
             <h3>About</h3>
             <ul class="p-0 m-0">
               <li v-for="link in aboutList" :key="link" class="list-unstyled">
@@ -37,7 +37,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="card rounded rounded-3">
+          <div class="card rounded rounded-3 px-4 py-5">
             <h3>Services</h3>
             <ul class="p-0 m-0">
               <li v-for="link in aboutList" :key="link" class="list-unstyled">
@@ -48,7 +48,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="card rounded rounded-3">
+          <div class="card rounded rounded-3 px-4 py-5">
             <h3>Support</h3>
             <ul class="p-0 m-0">
               <li v-for="link in aboutList" :key="link" class="list-unstyled">
@@ -112,11 +112,15 @@ footer {
 
     .btn-outlined-blue {
       color: $white;
+
+      &:hover {
+        color: $fountain-blue;
+      }
     }
     .card {
       background-color: $shark;
 
-      padding: 2rem 3rem;
+      // padding: 10% 10%;
 
       h3 {
         color: $white;

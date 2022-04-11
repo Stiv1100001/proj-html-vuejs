@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="container d-flex justify-content-between align-items-center pt-2 w-75 mx-auto"
+    class="container-md d-flex justify-content-between align-items-center pt-2 w-75 mx-auto"
   >
     <img :src="logo" alt="Logo" />
     <div class="d-flex">

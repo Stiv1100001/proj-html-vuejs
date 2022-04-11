@@ -1,6 +1,6 @@
 <template>
   <section class="touch">
-    <div class="container">
+    <div class="container-md">
       <div class="row">
         <div class="col-8">
           <h6 class="subtitle mb-4">Send a message</h6>
@@ -93,7 +93,7 @@ export default {
 @import "../../assets/style/partials/variables";
 
 .touch {
-  .container {
+  .container-md {
     padding: 7rem 9rem;
 
     p {

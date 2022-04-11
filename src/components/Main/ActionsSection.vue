@@ -1,6 +1,6 @@
 <template>
   <section class="actions">
-    <div class="container text-center">
+    <div class="container-md text-center">
       <div class="mb-5">
         <h6 class="subtitle mb-4">We do more for everyone</h6>
         <h1 class="title mb-4">

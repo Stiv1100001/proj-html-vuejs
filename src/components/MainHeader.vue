@@ -1,7 +1,7 @@
 <template>
   <header class="vw-100">
     <div
-      class="container d-flex justify-content-between align-items-center py-2"
+      class="container-md d-flex justify-content-between align-items-center py-2"
     >
       <div class="opening">
         <font-awesome-icon icon="fa-solid fa-clock" />
@@ -45,7 +45,7 @@ header {
   color: $white;
   font-size: 1rem;
 
-  .container {
+  .container-md {
     height: 100%;
 
     .social {
